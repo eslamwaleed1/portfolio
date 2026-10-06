@@ -1,131 +1,60 @@
-import GraduationProjectImage from "../assets/project_screenshots/gazeflow/4.png";
-import BranchSystemImage from "../assets/project_screenshots/branch_management_system/1.png";
+import BranchSystemImage from "../assets/project_screenshots/branch_management_system/1 (1).png";
 import AssemblyEndgameImage from "../assets/project_screenshots/assembly_endgame/2.png";
-import ThisPortfolioImage from "../assets/project_screenshots/this_portfolio/1.png";
-import ImageGalleryImage from "../assets/project_screenshots/vanilla_js_image_gallery/1.png";
-import ResponsiveDesignOneImage from "../assets/project_screenshots/responsive_design_1/1.png";
-import ResponsiveDesignTwoImage from "../assets/project_screenshots/responsive_design_2/2.png";
-import ProductComponentImage from "../assets/project_screenshots/product_component_responsive/1.png";
+import GraduationProjectImage from "../assets/project_screenshots/gazeflow/4.png";
 
 export interface Project {
 	id: string;
 	title: string;
 	description: string;
 	tags: string[];
-	imageUrl?: string;
+	imageUrl: string;
 	githubUrl?: string;
-  demoUrl?: string;
-  screenshotsUrl?: string;
-  hasVideos?: boolean;
-  category:
-  | "Graduation Project"
-  | "React"
-  | "Vanilla JS"
-  | "Responsive Design"
-  | "Flutter";
+	demoUrl?: string;
+	screenshotsUrl?: string;
 }
 
 export const projects: Project[] = [
 	{
-		id: "1",
+		id: "gaze-flow",
 		title: "Gaze Flow",
 		description:
-			"A mobile app that integrates eye tracking with voice commands to allow full control on the phone without needing to touch the screen.",
-		tags: ["Flutter", "Kotlin", "Eyedid SDK", "PyTorch", "Dart", "Figma"],
-		category: "Graduation Project",
+			"A graduation project exploring hands-free phone access through eye tracking and voice commands, combining mobile development with assistive technology.",
+		tags: ["Flutter", "Dart", "Kotlin", "PyTorch", "Eyedid SDK", "Figma"],
 		imageUrl: GraduationProjectImage,
-		githubUrl:
-      "https://github.com/eslamwaleed1/gaze-flow-eye-tracking-voice-app",
-    screenshotsUrl: "../assets/project_screenshots/gazeflow/",
-    hasVideos: true,
+		githubUrl: "https://github.com/eslamwaleed1/gaze-flow-eye-tracking-voice-app",
+		screenshotsUrl: "../assets/project_screenshots/gazeflow/",
 	},
 	{
-		id: "2",
+		id: "branch-management-system",
 		title: "Branch Management System",
 		description:
-			"A comprehensive system to manage branch operations efficiently by ",
-		tags: ["React", "JavaScript", "Tailwind", "React Router"],
-		category: "React",
-    imageUrl: BranchSystemImage,
-    demoUrl: "https://branch-management-system-jf1a.vercel.app/",
+			"A full stack platform for managing branch operations, tracking business performance, and bringing key data into one clear dashboard.",
+		tags: [
+			"React",
+			"Node.js",
+			"Express.js",
+			"MongoDB",
+			"TanStack Query",
+			"Material UI",
+			"React Router",
+			"Chart.js",
+			"Lucide React",
+			"REST APIs",
+		],
+		imageUrl: BranchSystemImage,
+		demoUrl: "https://branch-management-system-jf1a.vercel.app/",
 		githubUrl: "https://github.com/eslamwaleed1/branch-management-system",
-    screenshotsUrl: "../assets/project_screenshots/branch_management_system/",
+		screenshotsUrl: "../assets/project_screenshots/branch_management_system/",
 	},
 	{
-		id: "3",
+		id: "assembly-endgame",
 		title: "Assembly: Endgame",
 		description:
-			"A mini game that is basically a Hangman game, you guess the letters to reveal a word.",
-		tags: ["React", "JavaScript", "React Router", "Tailwind"],
-		category: "React",
-    imageUrl: AssemblyEndgameImage,
-    demoUrl: "https://assemblyendgame-ten.vercel.app/",
-    githubUrl: "https://github.com/eslamwaleed1/assembly_endgame",
-    screenshotsUrl: "../assets/project_screenshots/assembly_endgame"
-	},
-	{
-		id: "4",
-		title: "This Portfolio",
-		description: "It's just this portfolio.",
-		tags: ["React", "TypeSccipt", "Tailwind"],
-		category: "React",
-    imageUrl: ThisPortfolioImage,
-    githubUrl: "https://github.com/eslamwaleed1/portfolio",
-	},
-	{
-		id: "5",
-		title: "Kasper",
-		description:
-			"Responsive big landing page for a business.",
-		tags: ["HTML", "CSS"],
-    category: "Responsive Design",
-    imageUrl: ResponsiveDesignTwoImage,
-    demoUrl: "https://html-css-2-nd-design.vercel.app/",
-    githubUrl: "https://github.com/eslamwaleed1/HTML-CSS-2ND-Design",
-    screenshotsUrl: "../assets/project_screenshots/responsive_design_2"
-	},
-	{
-		id: "6",
-		title: "Leon",
-		description:
-			"Responsive big landing page for a business.",
-		tags: ["HTML", "CSS"],
-    category: "Responsive Design",
-    imageUrl: ResponsiveDesignOneImage,
-    demoUrl: "https://html-css-1-st-design.vercel.app/",
-    githubUrl: "https://github.com/eslamwaleed1/HTML-CSS-1ST-Design",
-    screenshotsUrl: "../assets/project_screenshots/responsive_design_1"
-	},
-	{
-		id: "7",
-		title: "Product Component Design",
-		description:
-			"Product preview component responsive design.",
-		tags: ["HTML", "CSS"],
-    category: "Responsive Design",
-    imageUrl: ProductComponentImage,
-    demoUrl: "https://product-preview-card-component-eight-alpha.vercel.app/",
-    githubUrl: "https://github.com/eslamwaleed1/Product-preview-card-component",
-    screenshotsUrl: "../assets/project_screenshots/product_component_responsive"
-	},
-	{
-		id: "8",
-		title: "Image Gallery",
-		description:
-			"Navigate between images smoothly.",
-		tags: ["JavaScript"],
-    category: "Vanilla JS",
-    imageUrl: ImageGalleryImage,
-    githubUrl: "https://github.com/eslamwaleed1/javascript-small-projects",
-    screenshotsUrl: "../assets/project_screenshots/vanilla_js_image_gallery"
-	},
-	{
-		id: "9",
-		title: "Favorite Series",
-		description:
-			"Simple yet elegant app to group favorite shows and tv series and mark favorite episodes, save screenshots & more.",
-		tags: ["Flutter", "Dart", "API"],
-		category: "Flutter",
-		githubUrl: "https://github.com/eslamwaleed1/favorite_series_app",
+			"A word guessing game inspired by Hangman. Guess letters, reveal the hidden word, and keep the programming languages alive.",
+		tags: ["React", "JavaScript", "CSS"],
+		imageUrl: AssemblyEndgameImage,
+		demoUrl: "https://assemblyendgame-ten.vercel.app/",
+		githubUrl: "https://github.com/eslamwaleed1/assembly_endgame",
+		screenshotsUrl: "../assets/project_screenshots/assembly_endgame",
 	},
 ];

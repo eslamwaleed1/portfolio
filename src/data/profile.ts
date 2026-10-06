@@ -6,7 +6,7 @@ import PersonalPhotograph from "../assets/pictures/personal_photograph.jpg";
 export const profile = {
   name: "Eslam Waleed",
   title: "Software Engineer",
-  subtitle: "React Developer",
+  subtitle: "Software Engineer - Full Stack Developer",
   bio: "A detail-oriented Software Engineer enthusiastic about solving real-world problems through analysis, critical thinking, & implementation.",
   avatar: PersonalPhotograph,
   socials: [

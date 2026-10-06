@@ -34,9 +34,11 @@ const renderVideo = (item: GalleryImage) => {
 };
 
 export function getImagesForProject(projectPath: string): GalleryImage[] {
-  const matchingImages = Object.keys(images).filter((key) => {
-    return key.startsWith(projectPath);
-  });
+  const matchingImages = Object.keys(images)
+    .filter((key) => key.startsWith(projectPath))
+    .sort((a, b) =>
+      a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
+    );
 
   return matchingImages.map((key) => {
     const isVideo = key.endsWith(".mp4");
