@@ -42,7 +42,7 @@ export const projects: Project[] = [
 			"REST APIs",
 		],
 		imageUrl: BranchSystemImage,
-		demoUrl: "https://branch-management-system-jf1a.vercel.app/",
+		demoUrl: "https://branch-management-system-seven.vercel.app/",
 		githubUrl: "https://github.com/eslamwaleed1/branch-management-system",
 		screenshotsUrl: "../assets/project_screenshots/branch_management_system/",
 	},
